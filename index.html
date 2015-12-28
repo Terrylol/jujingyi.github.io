@@ -1,21 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Kikuchanj，鞠婧祎">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<title>Coming Soon For Kikuchanj Website</title>
-<style>
-html,body{width:100%;height:100%}
-body{background-color:#4ea6e6;white-space:nowrap;margin:0;padding:0;text-align:center;overflow:hidden}img{position:relative;top:30%;display:none;min-width:200px;_width:200px;margin:0 auto}</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kikuchanj-鞠婧祎个站</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
 </head>
+
 <body>
-<a href="http://weibo.com/jujingyicn">
-        <img src="comingsoon.png" alt="Kikuchanj-鞠婧祎个站" title="Kikuchanj-鞠婧祎个站微博"></a>
-<script src="index.js"></script>
-	<!--Mail:admin@jujingyicn.com-->
+
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper" class="">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick="$(&quot;#menu-close&quot;).click();">鞠婧祎个站</a>
+            </li>
+            <li>
+                <a href="#top" onclick="$(&quot;#menu-close&quot;).click();">主页</a>
+            </li>
+            <li>
+                <a href="#read" onclick="$(&quot;#menu-close&quot;).click();">文章</a>
+            </li>
+            <li>
+                <a href="#music" onclick="$(&quot;#menu-close&quot;).click();">音乐</a>
+            </li>
+            <li>
+                <a href="#video" onclick="$(&quot;#menu-close&quot;).click();">视频</a>
+            </li>
+            <li>
+                <a href="#contact" onclick="$(&quot;#menu-close&quot;).click();">联系</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Kikuchanj-鞠婧祎个站</h1>
+            <h3>面朝阳，心亦朝阳</h3>
+            <br>
+            <p><wb:publish action="pubilish" type="web" language="zh_cn" button_type="red" button_size="middle" button_text="发布微博" refer="y" appkey="5DntQb"></wb:publish></p>
+        </div>
+    </header>
+
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>把简单的事做好就不简单，把平凡的事做好就不平凡</h2>
+                    <p class="lead">鞠婧祎后援会欢迎来自全国各地的鞠骑加入  <a target="_blank" href="http://qm.qq.com/cgi-bin/qm/qr?k=eNYJa2qbVmI_2G2TIo_egBf2RgG-YTmZ">QQ群：416965580</a>.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>关注我们的微博</h3>
+                    <a href="http://weibo.com/3669102477" class="btn btn-lg btn-dark">鞠婧祎微博</a>
+<a href="http://weibo.com/jujingyicn" class="btn btn-lg btn-light">鞠婧祎个站微博</a>
+                    <a href="http://weibo.com/5537708570" class="btn btn-lg btn-dark">鞠婧祎后援会微博</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Kikuchanj-鞠婧祎个站</strong>
+                    </h4>
+                    
+                    <ul class="list-unstyled">
+                        
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:admin@jujingyicn.com">admin@jujingyicn.com</a>
+                        </li>
+                    </ul>
+                    
+                    
+                    
+                    <p class="text-muted">Copyright © Kikuchanj Website 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
 </body>
-	
 </html>
