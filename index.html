@@ -11,10 +11,13 @@ body{margin:0px;padding:0px;}
 frame{margin:0px;}
 li,ul{margin:0px;padding:0px;}
 </style>
-<script language=javascript>
-  if(screen.width<='1024')
-  window.location = "http://www.sh48.com/mobile/index.html";
-else{}
+<script type="text/javascript">
+var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+var browser = navigator.userAgent.toLowerCase(); 
+var isMobile = false; 
+for (var i=0; i<mobileAgent.length; i++){ if (browser.indexOf(mobileAgent[i])!=-1){ isMobile = true; 
+location.href = 'http://www.sh48.com/mobile/index.html';
+break; } }
 </script>
 <body>
 <div class="category">
