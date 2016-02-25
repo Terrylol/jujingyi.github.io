@@ -27,7 +27,7 @@ function initAudio(elem) {
 		
         $('.title').text(' - ' + title);
         $('.artist').text(artist);
-        $('#t_cover').html('<img src="Images/' + cover+'">');
+        $('#t_cover').html('<img src="images/' + cover+'">');
 		}
 		
 $(document).ready(function(){
@@ -90,7 +90,7 @@ $(document).ready(function(){
 					}
 					else{
 							$('#error').text('最后一首歌！');
-							$('#t_cover').html('<img src="Images/logo.png">');
+							$('#t_cover').html('<img src="logo.png">');
 						}
 				});
 			
@@ -135,7 +135,7 @@ $(document).ready(function(){
 					}
 					else{
 							$('#error').text('已经到底啦，请选择歌曲！');
-							$('#t_cover').html('<img src="Images/logo.png">');
+							$('#t_cover').html('<img src="logo.png">');
 							mus = null;
 						}
 				});
@@ -155,7 +155,7 @@ $(document).ready(function(){
 					}
 					else{
 							$('#error').text('已经到顶啦，请选择歌曲！');
-							$('#t_cover').html('<img src="Images/logo.png">');
+							$('#t_cover').html('<img src="logo.png">');
 							
 							mus = null;
 						}
