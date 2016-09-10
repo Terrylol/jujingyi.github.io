@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0; font-family:"微软雅黑"; text-shadow:none;}
+body {min-width: 320px;}
+a{ text-decoration:none;}
+ul{ list-style-type:none;}
+input{ outline:none;}
+img{ border:0;}
+
+@media screen and (max-width: 372px) and (min-width: 320px){
+body {
+font-size: 12px;
+}}
+@media screen and (max-width: 425px) and (min-width: 373px){
+body {
+font-size: 14px;
+}}
+@media screen and (max-width: 479px) and (min-width: 426px){
+body {
+font-size: 16px;
+}}
+@media screen and (max-width: 532px) and (min-width: 480px){
+body {
+font-size: 18px;
+}}
+@media screen and (max-width: 585px) and (min-width: 533px){
+body {
+font-size: 20px;
+}}
+@media screen and (max-width: 640px) and (min-width: 586px){
+body {
+font-size: 22px;
+}}
+@media screen and (min-width: 640px){
+body {
+font-size: 24px;
+}}
+
+
+
+.bj-hui{ background:#f4f4f4;}
+.bold{ font-weight:bold;}
+.banner{ width:100%; margin-bottom:0.8em;}
+
+.list-pic li a{ display:block; background:#fff; position:relative; min-height:11em; margin-bottom:0.8em;}
+.list-pic li a:hover{ background:#efefef;}
+.list-pic li .pic{ width:11em; position:absolute; top:0em; left:0em;}
+.list-pic li .neirong{ margin-left:11em; padding:0em 1em;}
+.neirong .biao{ width:2.3em;}
+.neirong .dbt{ font-size:1.3em; color:#333; white-space:nowrap; margin-top:0.2em; margin-bottom:0.2em;}
+.neirong .xzsm{ font-size:1em; color:#666; overflow:hidden;  white-space:nowrap; text-overflow:ellipsis;}
+.neirong .jiage{ font-size:1em; color:#F27600;}
+.neirong .jiage .jgsz{ font-weight:bold; font-size:3em; }
